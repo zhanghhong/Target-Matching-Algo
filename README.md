@@ -2,6 +2,7 @@
 
 ### 1. 使用说明(windows/cmake)
 
+- 新建build文件夹
 - 运行build_cmake.bat进行编译
 - 编译后在Matching-Algo/build/match-raev.exe运行
 
