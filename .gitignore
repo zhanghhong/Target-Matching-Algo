@@ -1,0 +1,22 @@
+# CMake 生成的文件
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# 编译输出
+*.exe
+*.o
+*.obj
+*.dll
+*.lib
+*.a
+
+# IDE 文件
+.vs/
+.vscode/
+*.vcxproj
+*.vcxproj.filters
+*.sln
+
