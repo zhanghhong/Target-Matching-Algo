@@ -25,16 +25,16 @@
 
 2. 角度随距离自适应：
     让" 1<i>σ</i> 角度误差"在该距离 (<i>R</i>) 上产生的横向误差约等于 "1 <i>σ</i><sub>r</sub>"，即角度变化在"空间上"影响与距离变化一样重要。
-    <div style="text-align: center;"><i>σ</i><sub>ang,deg</sub>(<i>R</i>) ≈ <i>σ</i><sub>r</sub>/<i>R</i> · 180/π</div>
+    <p align="center"><i>σ</i><sub>ang,deg</sub>(<i>R</i>) ≈ <i>σ</i><sub>r</sub>/<i>R</i> · 180/π</p>
 3. 计算标准化距离：
 
-<div style="text-align: center;"><i>d</i><sup>2</sup> = (Δ<i>r</i>/<i>σ</i><sub>r</sub>)<sup>2</sup> + (Δaz°/<i>σ</i><sub>az</sub>)<sup>2</sup> + (Δel°/<i>σ</i><sub>el</sub>)<sup>2</sup> + (Δ<i>v</i>/<i>σ</i><sub>v</sub>)<sup>2</sup></div>
+<p align="center"><i>d</i><sup>2</sup> = (Δ<i>r</i>/<i>σ</i><sub>r</sub>)<sup>2</sup> + (Δaz°/<i>σ</i><sub>az</sub>)<sup>2</sup> + (Δel°/<i>σ</i><sub>el</sub>)<sup>2</sup> + (Δ<i>v</i>/<i>σ</i><sub>v</sub>)<sup>2</sup></p>
 
 其中针对方位使用最小环差（例如方位 359° 与 1° 的差是 2°，不是 358°）。
 
 4. 把距离映射成隶属度：
 
-<div style="text-align: center;"><i>μ</i> = exp(-<sup>1</sup>/<sub>2</sub> <i>d</i><sup>2</sup>)</div>
+<p align="center"><i>μ</i> = exp(-<sup>1</sup>/<sub>2</sub> <i>d</i><sup>2</sup>)</p>
 5. 取隶属度最大的索引：若通过门限，返回 <i>μ</i> 最大（等价于 <i>d</i><sup>2</sup> 最小）的目标索引
 
 ### 5. 举例说明
